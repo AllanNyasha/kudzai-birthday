@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Kudzai!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="title">Happy Birthday, Kudzai!</h1>
+            <img src="balloons.png" alt="Balloons" class="balloons">
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="container">
+            <article class="message">
+                <p class="content">Dear Kudzai,</p>
+                <p class="content">Happy Birthday to the most amazing person in my life!</p>
+                <p class="content">Can you believe we've been together since 2019? Time flies when you're with someone special like you.</p>
+                <p class="content">From our first date filled with laughter to the countless adventures we've shared, every moment with you is a treasure.</p>
+                <p class="content">Here's a special verse just for you:</p>
+                <blockquote class="bible-verse">
+                    "The Lord bless you and keep you;<br>
+                    the Lord make his face shine on you and be gracious to you;<br>
+                    the Lord turn his face toward you and give you peace."
+                    <cite>Numbers 6:24-26 (NIV)</cite>
+                </blockquote>
+                <p class="content">Here's to celebrating your birthday and the beautiful journey we're on together.</p>
+                <p class="content">With all my love,</p>
+                <p class="content">Allan</p>
+            </article>
+
+            <div class="videos">
+                <div class="video">
+                    <h2 class="video-title">A Special Message Just for You</h2>
+                    <video controls>
+                        <source src="birthday_message.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video">
+                    <h2 class="video-title">A Message from the Janganos</h2>
+                    <video controls>
+                        <source src="jangano_message.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video">
+                    <h2 class="video-title">A Message from Allan</h2>
+                    <video controls>
+                        <source src="allan_message.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <div class="gallery">
+                <h2 class="gallery-title">Birthday Girl Pictures</h2>
+                <div class="image-grid">
+                    <img src="kudzai1.jpg" alt="Kudzai 1" onclick="openLightbox(this.src)">
+                    <img src="kudzai2.jpg" alt="Kudzai 2" onclick="openLightbox(this.src)">
+                    <img src="kudzai3.jpg" alt="Kudzai 3" onclick="openLightbox(this.src)">
+                    <img src="kudzai4.jpg" alt="Kudzai 4" onclick="openLightbox(this.src)">
+                    <img src="kudzai5.jpg" alt="Kudzai 5" onclick="openLightbox(this.src)">
+                    <img src="kudzai6.jpg" alt="Kudzai 6" onclick="openLightbox(this.src)">
+                </div>
+            </div>
+
+            <div class="fun-element">
+                <h2 class="fun-title">Interactive Fun Zone</h2>
+                <div class="fun-content">
+                    <p>Explore these fun activities:</p>
+                    <ul>
+                        <li><a href="javascript:void(0);" onclick="showJoke()">Laugh with a joke</a></li>
+                        <li><a href="javascript:void(0);" onclick="playMusic()">Listen to romantic music</a></li>
+                        <li><a href="javascript:void(0);" onclick="showDance()">Watch a romantic dance</a></li>
+                    </ul>
+                    <p id="jokeDisplay"></p>
+                    <iframe id="danceVideo" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">&copy; 2024 Allan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="">
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
